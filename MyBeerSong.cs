@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace BeerSong
 {
@@ -26,7 +27,18 @@ namespace BeerSong
 
         public static string Verses(int begin, int end)
         {
-            throw new NotImplementedException("You need to implement this function.");
+            StringBuilder result = new StringBuilder();
+            int numberOfVerses = begin - end;
+            MyBeerSong song = new MyBeerSong(begin);
+
+            for (int i = 0; i < numberOfVerses; i++)
+            {
+                result.Append(song.NextVerse());
+                result.Append("\n");
+            }
+            result.Append(song.NextVerse());
+
+            return result.ToString();
         }
 
         string GetFirstLine()

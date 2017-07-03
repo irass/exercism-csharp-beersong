@@ -56,7 +56,7 @@ namespace BeerSong
             Assert.Equal(expected, MyBeerSong.Verse(0));
         }
 
-        [Fact(Skip = "Remove to run test")]
+        [Fact]
         public void First_two_verses()
         {
             var expected =
@@ -66,10 +66,10 @@ namespace BeerSong
                 "98 bottles of beer on the wall, 98 bottles of beer.\n" +
                 "Take one down and pass it around, 97 bottles of beer on the wall.\n" +
                 "";
-            Assert.Equal(expected, BeerSong.Verses(99, 98));
+            Assert.Equal(expected, MyBeerSong.Verses(99, 98));
         }
 
-        [Fact(Skip = "Remove to run test")]
+        [Fact]
         public void Last_three_verses()
         {
             var expected =
@@ -82,10 +82,10 @@ namespace BeerSong
                 "No more bottles of beer on the wall, no more bottles of beer.\n" +
                 "Go to the store and buy some more, 99 bottles of beer on the wall.\n" +
                 "";
-            Assert.Equal(expected, BeerSong.Verses(2, 0));
+            Assert.Equal(expected, MyBeerSong.Verses(2, 0));
         }
 
-        [Fact(Skip = "Remove to run test")]
+        [Fact]
         public void All_verses()
         {
             var expected =
@@ -389,7 +389,7 @@ namespace BeerSong
                 "No more bottles of beer on the wall, no more bottles of beer.\n" +
                 "Go to the store and buy some more, 99 bottles of beer on the wall.\n" +
                 "";
-            Assert.Equal(expected, BeerSong.Verses(99, 0));
+            Assert.Equal(expected, MyBeerSong.Verses(99, 0));
         }
     }
 }
