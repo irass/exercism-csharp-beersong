@@ -3,25 +3,19 @@ using System.Text;
 
 namespace BeerSong
 {
-    public class Line : ILine
+    public abstract class Line : ILine
     {
         public int NumberOfBottles { get; private set; }
         public string Text { get; protected set; }
 
-        public Line(int numberOfBottles)
+        protected Line(int numberOfBottles)
         {
             NumberOfBottles = numberOfBottles;
         }
 
-        protected virtual string FirstSection()
-        {
-            throw new NotImplementedException();
-        }
+        protected abstract string FirstSection();
 
-        protected virtual string SecondSection()
-        {
-            throw new NotImplementedException();
-        }
+        protected abstract string SecondSection();
 
         protected string PluralEnding { get { return NumberOfBottles == 1 ? "" : "s"; } }
 

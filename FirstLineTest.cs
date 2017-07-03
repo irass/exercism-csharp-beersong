@@ -19,7 +19,6 @@ namespace BeerSong
             Assert.AreEqual(expected, line);
         }
 
-
     }
 }
 

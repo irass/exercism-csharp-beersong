@@ -46,9 +46,7 @@ namespace BeerSong
             return result.ToString();
         }
 
-        int GetNextNumberOfBottles() => numberOfBottlesOnTheWall > 0 ? numberOfBottlesOnTheWall - 1 : initialNumberOfBottlesOnTheWall;
-
-        int NextNumberOfBottles { get { return GetNextNumberOfBottles(); } }
+        int NextNumberOfBottles { get { return numberOfBottlesOnTheWall > 0 ? numberOfBottlesOnTheWall - 1 : initialNumberOfBottlesOnTheWall; } }
 
     }
 }
