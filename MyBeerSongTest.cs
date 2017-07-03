@@ -8,7 +8,6 @@ namespace BeerSong
     [TestFixture]
     public class MyBeerSongTest
     {
-
         [Test]
         public void Get_next_verse()
         {
@@ -26,8 +25,6 @@ namespace BeerSong
             Assert.AreEqual(expected1, verse1);
             Assert.AreEqual(expected2, verse2);
         }
-
-        
 
     }
 }

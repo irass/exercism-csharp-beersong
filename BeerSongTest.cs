@@ -36,24 +36,24 @@ namespace BeerSong
             Assert.Equal(expected, MyBeerSong.Verse(2));
         }
 
-        [Fact(Skip = "Remove to run test")]
+        [Fact]
         public void Verse_1()
         {
             var expected =
                 "1 bottle of beer on the wall, 1 bottle of beer.\n" +
                 "Take it down and pass it around, no more bottles of beer on the wall.\n" +
                 "";
-            Assert.Equal(expected, BeerSong.Verse(1));
+            Assert.Equal(expected, MyBeerSong.Verse(1));
         }
 
-        [Fact(Skip = "Remove to run test")]
+        [Fact]
         public void Verse_0()
         {
             var expected =
                 "No more bottles of beer on the wall, no more bottles of beer.\n" +
                 "Go to the store and buy some more, 99 bottles of beer on the wall.\n" +
                 "";
-            Assert.Equal(expected, BeerSong.Verse(0));
+            Assert.Equal(expected, MyBeerSong.Verse(0));
         }
 
         [Fact(Skip = "Remove to run test")]
