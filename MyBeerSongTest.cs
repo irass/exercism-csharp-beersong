@@ -26,6 +26,13 @@ namespace BeerSong
             Assert.AreEqual(expected2, verse2);
         }
 
+
+        [Test]
+        public void Negative_initial_number_of_bottles_throws_exception()
+        {
+            Assert.Throws<ArgumentException>(() => new MyBeerSong(-1));
+        }
+
     }
 }
 
